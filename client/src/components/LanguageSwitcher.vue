@@ -134,8 +134,11 @@ const selectLanguage = (locale) => {
 
 .dropdown-menu {
   position: absolute;
-  top: calc(100% + 0.5rem);
-  right: 0;
+  /* Opens upward, anchored to the left edge: the trigger sits at the bottom of the
+     sidebar, so a downward or right-aligned menu would be clipped or leave the viewport. */
+  bottom: calc(100% + 0.5rem);
+  top: auto;
+  left: 0;
   min-width: 160px;
   background: white;
   border: 1px solid #e2e8f0;
