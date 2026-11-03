@@ -220,14 +220,14 @@ export default {
     }
 
     // Nav kept in one place so routes and labels are not duplicated.
-    // Icons are plain 24x24 stroke paths (no icon library). 'Reports' is hardcoded as before.
+    // Icons are plain 24x24 stroke paths (no icon library).
     const navItems = [
       { to: '/', label: t('nav.overview'), icon: '<path d="M3 12l9-9 9 9M5 10v10h14V10" />' },
       { to: '/inventory', label: t('nav.inventory'), icon: '<path d="M3 7l9-4 9 4v10l-9 4-9-4z" />' },
       { to: '/orders', label: t('nav.orders'), icon: '<path d="M6 3h12v18H6zM9 8h6M9 12h6M9 16h4" />' },
       { to: '/spending', label: t('nav.finance'), icon: '<path d="M12 2v20M17 6H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />' },
       { to: '/demand', label: t('nav.demandForecast'), icon: '<path d="M3 17l6-6 4 4 8-8" />' },
-      { to: '/reports', label: 'Reports', icon: '<path d="M4 20V10M10 20V4M16 20v-8M22 20H2" />' }
+      { to: '/reports', label: t('nav.reports'), icon: '<path d="M4 20V10M10 20V4M16 20v-8M22 20H2" />' }
     ]
 
     // Escape closes the drawer. The listener is removed on unmount so it does not leak.
